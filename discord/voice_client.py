@@ -782,8 +782,8 @@ class VoiceClient(VoiceProtocol):
             raise RecordingException('Not connected to voice channel.')
         if self.recording:
             raise RecordingException("Already recording.")
-        if not isinstance(sink, Sink):
-            raise RecordingException("Must provide a Sink object.")
+        #if not isinstance(sink, Sink):
+        #    raise RecordingException("Must provide a Sink object.")
 
         self.empty_socket()
 
